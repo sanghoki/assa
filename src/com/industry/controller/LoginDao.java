@@ -15,7 +15,7 @@ public class LoginDao
 			try
 			{
 			Class.forName("com.mysql.jdbc.Driver");
-			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/database?useSSL=false","root","admin123");
+			Connection con = DriverManager.getConnection("jdbc:mysql://localhost/industry","root","");
 			
 			String logq="select * from industry where Username = ? and Password = ?";
 			
